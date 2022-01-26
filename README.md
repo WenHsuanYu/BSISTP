@@ -14,15 +14,15 @@ I use approximate algorithms to find approximate solutions to BSISTP.
 ---
 
 ## Algorithm 1
-KRUSKAL(G):
-A = ∅
-For each vertex v ∈ G.V:
-    MAKE-SET(v)
-For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):
-    if FIND-SET(u) ≠ FIND-SET(v):       
-    A = A ∪ {(u, v)}
-    UNION(u, v)
-return A
+KRUSKAL(G):<br>
+A = ∅<br>
+For each vertex v ∈ G.V:<br>
+    MAKE-SET(v)<br>
+For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):<br>
+    if FIND-SET(u) ≠ FIND-SET(v):<br>
+    A = A ∪ {(u, v)}<br>
+    UNION(u, v)<br>
+return A<br>
 
 ---
 ## Algorithm 2 Time Complexity: O(|E|^2)

@@ -3,7 +3,7 @@ Balanced Selected-Internal Steiner Tree
 
 I use approximate algorithms to find approximate solutions to BSISTP.
 
-## Conclusion Algorithm 4 (**O(E^2)**):
+## Conclusion Algorithm 4 Time Complexity: (O(E^2)):
 
 1. Use algorithm 1 for the BoSTP(bottleneck Steiner tree problem) to find a Steiner tree S for R in G.
 2. Use algorithm 2 to find a balanced Steiner tree S for R in G.
@@ -13,23 +13,23 @@ I use approximate algorithms to find approximate solutions to BSISTP.
 	3.2 Apply algorithm 3 to find a Selected-internal Steiner tree T in S^３.
 ---
 
-## Algorithm 1
+## Algorithm 1 Time Complexity: O(E log E):
 KRUSKAL(G):<br>
 A = ∅<br>
 For each vertex v ∈ G.V:<br>
-    MAKE-SET(v)<br>
+	&nbsp;MAKE-SET(v)<br>
 For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):<br>
-    if FIND-SET(u) ≠ FIND-SET(v):<br>
-    A = A ∪ {(u, v)}<br>
-    UNION(u, v)<br>
+	&nbsp;if FIND-SET(u) ≠ FIND-SET(v):<br>
+	&nbsp;A = A ∪ {(u, v)}<br>
+	&nbsp;UNION(u, v)<br>
 return A<br>
 
 ---
-## Algorithm 2 Time Complexity: O(|E|^2)
+## Algorithm 2 Time Complexity: O(|E|^2):
 
 ![](https://github.com/WenHsuanYu/BSISTP/blob/main/pic/alg2.png)
 
 ---
-## Algorithm 3
+## Algorithm 3 Time Complexity: O(|V|^2)
 ![](https://github.com/WenHsuanYu/BSISTP/blob/main/pic/alg3.png)
 
